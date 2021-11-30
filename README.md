@@ -17,15 +17,14 @@ vet(int vet[5]);  /// declaração do metodo
 int vetores::vet(int vet[5]){															
 	for (i=1;i<=5;i++){
     		cout << "Digite o numero na posicao " << i << endl;
-    		cin >> x;
-    		vet[i] = x;
+    		cin >> vet [i];
 					}
 ///ação do metodo - parametro y
 	for (i=1;i<=5;i++){																	
-    for (y=1;y<=5;y++){
+    for (y=i;y<=5;y++){
             if(vet[i] == vet[y]){
             if(i != y){
-    cout << "O numero repetido " << vet[y] <<  " esta na posicao: " << i << endl; ///declara o numero repetido
+    cout << "O numero repetido " << vet[y] <<  " esta na posicao: " << i << " e " << y << endl; ///declara o numero repetido
         break;
 
     					}
